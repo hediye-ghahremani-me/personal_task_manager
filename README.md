@@ -28,6 +28,8 @@ A Python-based personal task manager for creating, organizing and managing simpl
 - Track task completion status
 - Save and load tasks in `tasks.txt`
 - Assign priorities to tasks (Low, Medium, High)
+- Mark tasks as completed
+- Delete tasks
 - Access a simple Admin Mode protected by a password
 - Loads the password from `.env`
 - Organize code into separate Python modules
@@ -127,10 +129,18 @@ Welcome, Hediye !
 
 Enter a task or type (out) to finish: coding
 Enter priority ( low/medium/high ): high
+Enter a task or type (out) to finish: homework
+Enter priority ( low/medium/high ): medium
 Enter a task or type (out) to finish: out
 
+Do you want your task (any of them) to get done or delete ? type (out) to exit : done
+Enter full task: coding - high
+Do you want your task (any of them) to get done or delete ? type (out) to exit : delete
+Enter full task: homework - medium
+Do you want your task (any of them) to get done or delete ? type (out) to exit : out
+
 Your tasks:
-Task :  coding - high
+Task :  coding - high - Done
 ```
 
 ## Screenshots
@@ -158,6 +168,7 @@ Task :  coding - high
 - [x] Admin Mode
 - [x] Project documentation
 - [x] Task priority management
+- [x] Deleting and marking tasks as done
 - [ ] Improve input validation
 - [ ] Add more task management features
 

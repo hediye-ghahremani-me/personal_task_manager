@@ -1,4 +1,4 @@
-from tasks import add_task, show_tasks
+from tasks import add_task, show_tasks, mark_done, delete_task
 from dotenv import load_dotenv
 import os
 
@@ -37,6 +37,20 @@ while True:
     task = task + " - " + priority
 
     add_task(tasks, task)
+
+while True:
+    choice = input("Do you want your task (any of them) to get done or delete ? type (out) to exit : ").lower()
+
+    if choice == "done":
+        task = input("Enter full task: ")
+        mark_done(tasks, task)
+
+    elif choice == "delete":
+        task = input("Enter full task: ")
+        delete_task(tasks, task)
+
+    elif choice == "out":
+        break
 
 print("Your tasks:")
 show_tasks(tasks)
