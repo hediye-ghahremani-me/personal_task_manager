@@ -4,4 +4,4 @@ def add_task(tasks, task):
 
 def show_tasks(tasks):
     for task in tasks:
-        print("-", task)
+        print("Task : ", task)

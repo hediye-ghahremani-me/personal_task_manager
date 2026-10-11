@@ -23,7 +23,7 @@ print("Welcome,", name, "!")
 tasks = []
 
 while True:
-    task = input("Enter a task or type (out) to finish: ")
+    task = input("Enter a task or type (out) to finish: ").lower()
 
     if task == "out":
         break
@@ -31,7 +31,7 @@ while True:
     priority = input("Enter priority ( low/medium/high ): ")
 
     while priority not in ["low", "medium", "high"]:
-        print("Invalid priority!")
+        print("Invalid priority! Please enter low, medium or high...")
         priority = input("Enter priority ( low/medium/high ): ")
 
     task = task + " - " + priority
