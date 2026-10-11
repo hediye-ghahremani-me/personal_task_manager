@@ -27,6 +27,7 @@ A Python-based personal task manager for creating, organizing and managing simpl
 - View and manage personal tasks
 - Track task completion status
 - Save and load tasks in `tasks.txt`
+- Assign priorities to tasks (Low, Medium, High)
 - Access a simple Admin Mode protected by a password
 - Loads the password from `.env`
 - Organize code into separate Python modules
@@ -113,7 +114,8 @@ python main.py
 4. If you choose `yes`, enter the password from your `.env` file
 5. Enter your name
 6. Enter your tasks
-7. Your result is saved in `results.txt`
+7. Enter the priority
+8. Your result is saved in `results.txt`
 
 ## Example Output
 ```text
@@ -123,13 +125,12 @@ Enter your name : Hediye
 
 Welcome, Hediye !
 
-Enter a task or type ( out ) to finish: coding
-Enter a task or type ( out ) to finish: debugging
-Enter a task or type ( out ) to finish: out
+Enter a task or type (out) to finish: coding
+Enter priority ( low/medium/high ): high
+Enter a task or type (out) to finish: out
 
 Your tasks:
-- coding
-- debugging
+Task :  coding - high
 ```
 
 ## Screenshots
@@ -156,6 +157,7 @@ Your tasks:
 - [x] Local file persistence
 - [x] Admin Mode
 - [x] Project documentation
+- [x] Task priority management
 - [ ] Improve input validation
 - [ ] Add more task management features
 
