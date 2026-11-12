@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 name = input("Enter your name : ")
-print("welcome, ", name, "!")
+print("welcome back, ", name, "!")
 
 admin_mode = input("Do you want to enter admin mode ? yes/no ")
 if admin_mode.lower() == "yes":
